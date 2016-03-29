@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ELNBehaviors"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Collection of UI behaviors."
   s.homepage     = "https://github.com/elegion/ios-ELNBehaviors"
   s.license      = "MIT"
