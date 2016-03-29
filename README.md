@@ -60,3 +60,8 @@ github 'elegion/ios-ELNBehaviors'
 pod repo add legion https://github.com/elegion/ios-podspecs
 pod repo push legion ELNBehaviors.podspec
 ```
+
+##TODO
+
+- xib compatibility
+- hide keyboard by tap behavior (gesture recognizer based)
