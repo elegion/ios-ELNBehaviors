@@ -37,12 +37,12 @@ github 'elegion/ios-ELNBehaviors'
 @property (nonatomic, strong) ELNPaginatedScrollViewBehavior *scrollBehavior;
 
 @end
-  
-@implenentation MyCustomViewController
-  
+
+@implementation MyCustomViewController
+
 - (void)viewDidLoad {
 	[super viewDidLoad];
-  
+
     self.scrollBehavior = [[ICPaginatedScrollBehavior alloc] initWithPageControl:self.pageControl scrollView:self.collectionView];
     self.scrollBehavior.autoScrollTimeInterval = 8;
 }
