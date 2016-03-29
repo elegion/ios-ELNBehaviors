@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Auto scroll is disabled if time interval equals to 0.
 ///
 /// Default value is 0.
-@property (nonatomic, assign) NSTimeInterval autoScrollTimeInterval IB_DESIGNABLE;
+@property (nonatomic, assign) NSTimeInterval autoScrollTimeInterval IBInspectable;
 
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;
