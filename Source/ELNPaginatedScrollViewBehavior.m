@@ -10,8 +10,8 @@
 
 @interface ELNPaginatedScrollViewBehavior ()
 
-@property (nonatomic, strong) UIPageControl *pageControl;
-@property (nonatomic, strong) UIScrollView *scrollView;
+@property (nonatomic, strong) IBOutlet UIPageControl *pageControl;
+@property (nonatomic, strong) IBOutlet  UIScrollView *scrollView;
 @property (nonatomic, assign) NSInteger currentPageIndex;
 @property (nonatomic, weak) NSTimer *autoScrollTimer;
 
@@ -22,8 +22,9 @@
 #pragma mark - Object Lifecycle
 
 - (void)dealloc {
-    [self.pageControl removeTarget:self action:@selector(pageControlValueChanged:) forControlEvents:UIControlEventValueChanged];
-    [self.scrollView removeObserver:self forKeyPath:NSStringFromSelector(@selector(contentOffset)) context:NULL];
+    // explicitly nil out properties to remove target/action and key-value observation 
+    self.pageControl = nil;
+    self.scrollView = nil;
 }
 
 #pragma mark - Initialization
@@ -32,12 +33,31 @@
     self = [super init];
     if (self) {
         self.pageControl = pageControl;
-        [self.pageControl addTarget:self action:@selector(pageControlValueChanged:) forControlEvents:UIControlEventValueChanged];
-        
         self.scrollView = scrollView;
-        [scrollView addObserver:self forKeyPath:NSStringFromSelector(@selector(contentOffset)) options:(NSKeyValueObservingOptions)0 context:NULL];
     }
     return self;
+}
+
+#pragma mark - Accessors
+
+- (void)setPageControl:(UIPageControl *)pageControl {
+    if (_pageControl == pageControl) {
+        return;
+    }
+    
+    [self.pageControl removeTarget:self action:@selector(pageControlValueChanged:) forControlEvents:UIControlEventValueChanged];
+    _pageControl = pageControl;
+    [self.pageControl addTarget:self action:@selector(pageControlValueChanged:) forControlEvents:UIControlEventValueChanged];
+}
+
+- (void)setScrollView:(UIScrollView *)scrollView {
+    if (_scrollView == scrollView) {
+        return;
+    }
+    
+    [self.scrollView removeObserver:self forKeyPath:NSStringFromSelector(@selector(contentOffset)) context:NULL];
+    _scrollView = scrollView;
+    [self.scrollView addObserver:self forKeyPath:NSStringFromSelector(@selector(contentOffset)) options:(NSKeyValueObservingOptions)0 context:NULL];
 }
 
 #pragma mark - KVO
