@@ -32,13 +32,8 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    BOOL canBecomeFirstResponder = [touches.anyObject.view canBecomeFirstResponder];
-    if (canBecomeFirstResponder) {
-        self.state = UIGestureRecognizerStateFailed;
-        return;
-    }
-    
-    if (self.shouldDismissKeyboardHandler == nil || self.shouldDismissKeyboardHandler(touches, event)) {
+    BOOL viewCanBecomeFirstResponder = [touches.anyObject.view canBecomeFirstResponder];
+    if (!viewCanBecomeFirstResponder && (self.shouldDismissKeyboardHandler == nil || self.shouldDismissKeyboardHandler(touches, event))) {
         [self.view endEditing:YES];
         self.state = UIGestureRecognizerStateRecognized;
         return;
