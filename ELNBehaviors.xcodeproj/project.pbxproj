@@ -7,22 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		115C095A1CAAC1C700DA9371 /* ELNBehaviors.h in Headers */ = {isa = PBXBuildFile; fileRef = 115C09581CAAC1C700DA9371 /* ELNBehaviors.h */; };
-		115C09611CAAC2DD00DA9371 /* ELNPaginatedScrollViewBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 115C095F1CAAC2DD00DA9371 /* ELNPaginatedScrollViewBehavior.h */; };
-		115C09621CAAC2DD00DA9371 /* ELNPaginatedScrollViewBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 115C09601CAAC2DD00DA9371 /* ELNPaginatedScrollViewBehavior.m */; };
+		118973831CAC07A1001841C2 /* ELNPaginatedScrollViewBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 1189737F1CAC07A1001841C2 /* ELNPaginatedScrollViewBehavior.h */; };
+		118973841CAC07A1001841C2 /* ELNPaginatedScrollViewBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 118973801CAC07A1001841C2 /* ELNPaginatedScrollViewBehavior.m */; };
+		118973871CAC07B7001841C2 /* ELNBehaviors.h in Headers */ = {isa = PBXBuildFile; fileRef = 1189737E1CAC07A1001841C2 /* ELNBehaviors.h */; };
+		1189739C1CAC126C001841C2 /* ELNKeyboardDismissGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1189739A1CAC126C001841C2 /* ELNKeyboardDismissGestureRecognizer.h */; };
+		1189739D1CAC126C001841C2 /* ELNKeyboardDismissGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1189739B1CAC126C001841C2 /* ELNKeyboardDismissGestureRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		115C094C1CAAC17600DA9371 /* ELNBehaviors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ELNBehaviors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		115C09581CAAC1C700DA9371 /* ELNBehaviors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELNBehaviors.h; sourceTree = "<group>"; };
-		115C09591CAAC1C700DA9371 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		115C095E1CAAC20000DA9371 /* Default.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Default.xcconfig; sourceTree = "<group>"; };
-		115C095F1CAAC2DD00DA9371 /* ELNPaginatedScrollViewBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELNPaginatedScrollViewBehavior.h; sourceTree = "<group>"; };
-		115C09601CAAC2DD00DA9371 /* ELNPaginatedScrollViewBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELNPaginatedScrollViewBehavior.m; sourceTree = "<group>"; };
+		118973721CAC0778001841C2 /* ELNBehaviors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ELNBehaviors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1189737E1CAC07A1001841C2 /* ELNBehaviors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELNBehaviors.h; sourceTree = "<group>"; };
+		1189737F1CAC07A1001841C2 /* ELNPaginatedScrollViewBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELNPaginatedScrollViewBehavior.h; sourceTree = "<group>"; };
+		118973801CAC07A1001841C2 /* ELNPaginatedScrollViewBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELNPaginatedScrollViewBehavior.m; sourceTree = "<group>"; };
+		118973811CAC07A1001841C2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1189739A1CAC126C001841C2 /* ELNKeyboardDismissGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELNKeyboardDismissGestureRecognizer.h; sourceTree = "<group>"; };
+		1189739B1CAC126C001841C2 /* ELNKeyboardDismissGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELNKeyboardDismissGestureRecognizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		115C09481CAAC17600DA9371 /* Frameworks */ = {
+		1189736E1CAC0778001841C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,46 +35,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		115C09421CAAC17600DA9371 = {
+		118973681CAC0778001841C2 = {
 			isa = PBXGroup;
 			children = (
-				115C095E1CAAC20000DA9371 /* Default.xcconfig */,
-				115C09571CAAC1C700DA9371 /* Source */,
-				115C094D1CAAC17600DA9371 /* Products */,
+				1189737D1CAC07A1001841C2 /* Source */,
+				118973731CAC0778001841C2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		115C094D1CAAC17600DA9371 /* Products */ = {
+		118973731CAC0778001841C2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				115C094C1CAAC17600DA9371 /* ELNBehaviors.framework */,
+				118973721CAC0778001841C2 /* ELNBehaviors.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		115C09571CAAC1C700DA9371 /* Source */ = {
+		1189737D1CAC07A1001841C2 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				115C095D1CAAC1F000DA9371 /* Core */,
-				115C095C1CAAC1E600DA9371 /* Supporting Files */,
+				118973B21CAC26EA001841C2 /* Core */,
+				118973861CAC07A3001841C2 /* Supporting Files */,
 			);
 			path = Source;
 			sourceTree = "<group>";
 		};
-		115C095C1CAAC1E600DA9371 /* Supporting Files */ = {
+		118973861CAC07A3001841C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				115C09581CAAC1C700DA9371 /* ELNBehaviors.h */,
-				115C09591CAAC1C700DA9371 /* Info.plist */,
+				1189737E1CAC07A1001841C2 /* ELNBehaviors.h */,
+				118973811CAC07A1001841C2 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		115C095D1CAAC1F000DA9371 /* Core */ = {
+		118973B21CAC26EA001841C2 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				115C095F1CAAC2DD00DA9371 /* ELNPaginatedScrollViewBehavior.h */,
-				115C09601CAAC2DD00DA9371 /* ELNPaginatedScrollViewBehavior.m */,
+				1189739A1CAC126C001841C2 /* ELNKeyboardDismissGestureRecognizer.h */,
+				1189739B1CAC126C001841C2 /* ELNKeyboardDismissGestureRecognizer.m */,
+				1189737F1CAC07A1001841C2 /* ELNPaginatedScrollViewBehavior.h */,
+				118973801CAC07A1001841C2 /* ELNPaginatedScrollViewBehavior.m */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -79,26 +83,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		115C09491CAAC17600DA9371 /* Headers */ = {
+		1189736F1CAC0778001841C2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				115C09611CAAC2DD00DA9371 /* ELNPaginatedScrollViewBehavior.h in Headers */,
-				115C095A1CAAC1C700DA9371 /* ELNBehaviors.h in Headers */,
+				1189739C1CAC126C001841C2 /* ELNKeyboardDismissGestureRecognizer.h in Headers */,
+				118973871CAC07B7001841C2 /* ELNBehaviors.h in Headers */,
+				118973831CAC07A1001841C2 /* ELNPaginatedScrollViewBehavior.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		115C094B1CAAC17600DA9371 /* ELNBehaviors */ = {
+		118973711CAC0778001841C2 /* ELNBehaviors */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 115C09541CAAC17600DA9371 /* Build configuration list for PBXNativeTarget "ELNBehaviors" */;
+			buildConfigurationList = 1189737A1CAC0778001841C2 /* Build configuration list for PBXNativeTarget "ELNBehaviors" */;
 			buildPhases = (
-				115C09471CAAC17600DA9371 /* Sources */,
-				115C09481CAAC17600DA9371 /* Frameworks */,
-				115C09491CAAC17600DA9371 /* Headers */,
-				115C094A1CAAC17600DA9371 /* Resources */,
+				1189736D1CAC0778001841C2 /* Sources */,
+				1189736E1CAC0778001841C2 /* Frameworks */,
+				1189736F1CAC0778001841C2 /* Headers */,
+				118973701CAC0778001841C2 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -106,42 +111,42 @@
 			);
 			name = ELNBehaviors;
 			productName = ELNBehaviors;
-			productReference = 115C094C1CAAC17600DA9371 /* ELNBehaviors.framework */;
+			productReference = 118973721CAC0778001841C2 /* ELNBehaviors.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		115C09431CAAC17600DA9371 /* Project object */ = {
+		118973691CAC0778001841C2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "e-legion";
 				TargetAttributes = {
-					115C094B1CAAC17600DA9371 = {
+					118973711CAC0778001841C2 = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
 			};
-			buildConfigurationList = 115C09461CAAC17600DA9371 /* Build configuration list for PBXProject "ELNBehaviors" */;
+			buildConfigurationList = 1189736C1CAC0778001841C2 /* Build configuration list for PBXProject "ELNBehaviors" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 115C09421CAAC17600DA9371;
-			productRefGroup = 115C094D1CAAC17600DA9371 /* Products */;
+			mainGroup = 118973681CAC0778001841C2;
+			productRefGroup = 118973731CAC0778001841C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				115C094B1CAAC17600DA9371 /* ELNBehaviors */,
+				118973711CAC0778001841C2 /* ELNBehaviors */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		115C094A1CAAC17600DA9371 /* Resources */ = {
+		118973701CAC0778001841C2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -151,18 +156,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		115C09471CAAC17600DA9371 /* Sources */ = {
+		1189736D1CAC0778001841C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				115C09621CAAC2DD00DA9371 /* ELNPaginatedScrollViewBehavior.m in Sources */,
+				118973841CAC07A1001841C2 /* ELNPaginatedScrollViewBehavior.m in Sources */,
+				1189739D1CAC126C001841C2 /* ELNKeyboardDismissGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		115C09521CAAC17600DA9371 /* Debug */ = {
+		118973781CAC0778001841C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -210,7 +216,7 @@
 			};
 			name = Debug;
 		};
-		115C09531CAAC17600DA9371 /* Release */ = {
+		118973791CAC0778001841C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -252,7 +258,7 @@
 			};
 			name = Release;
 		};
-		115C09551CAAC17600DA9371 /* Debug */ = {
+		1189737B1CAC0778001841C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEFINES_MODULE = YES;
@@ -268,7 +274,7 @@
 			};
 			name = Debug;
 		};
-		115C09561CAAC17600DA9371 /* Release */ = {
+		1189737C1CAC0778001841C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEFINES_MODULE = YES;
@@ -287,25 +293,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		115C09461CAAC17600DA9371 /* Build configuration list for PBXProject "ELNBehaviors" */ = {
+		1189736C1CAC0778001841C2 /* Build configuration list for PBXProject "ELNBehaviors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				115C09521CAAC17600DA9371 /* Debug */,
-				115C09531CAAC17600DA9371 /* Release */,
+				118973781CAC0778001841C2 /* Debug */,
+				118973791CAC0778001841C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		115C09541CAAC17600DA9371 /* Build configuration list for PBXNativeTarget "ELNBehaviors" */ = {
+		1189737A1CAC0778001841C2 /* Build configuration list for PBXNativeTarget "ELNBehaviors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				115C09551CAAC17600DA9371 /* Debug */,
-				115C09561CAAC17600DA9371 /* Release */,
+				1189737B1CAC0778001841C2 /* Debug */,
+				1189737C1CAC0778001841C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 115C09431CAAC17600DA9371 /* Project object */;
+	rootObject = 118973691CAC0778001841C2 /* Project object */;
 }

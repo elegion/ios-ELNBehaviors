@@ -25,7 +25,7 @@ github 'elegion/ios-ELNBehaviors'
 
 ###ELNPaginatedScrollViewBehavior
 
-Связывает `UIScrollView` и `UIPageControl` для постраничной навигации. Используется для отображения баннеров или галлереи картинок:
+Связывает `UIScrollView` и `UIPageControl` для постраничной навигации. Используется для отображения баннеров или галереи картинок:
 
 ![scroll](scroll.gif)
 
@@ -60,7 +60,3 @@ github 'elegion/ios-ELNBehaviors'
 pod repo add legion https://github.com/elegion/ios-podspecs
 pod repo push legion ELNBehaviors.podspec
 ```
-
-##TODO
-
-- hide keyboard by tap behavior (gesture recognizer based)
