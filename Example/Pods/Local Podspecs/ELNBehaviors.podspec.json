@@ -1,0 +1,21 @@
+{
+  "name": "ELNBehaviors",
+  "version": "0.0.4",
+  "summary": "Collection of UI behaviors.",
+  "homepage": "https://github.com/elegion/ios-ELNBehaviors",
+  "license": "MIT",
+  "authors": {
+    "chebur": "chebur.mail@gmail.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.com/elegion/ios-ELNBehaviors.git",
+    "tag": "0.0.4"
+  },
+  "source_files": [
+    "Source",
+    "Source/**/*.{h,m}"
+  ]
+}

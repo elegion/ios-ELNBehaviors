@@ -1,9 +1,9 @@
 //
 //  main.m
-//  Example
+//  example
 //
-//  Created by Dmitry Nesterenko on 30.03.16.
-//  Copyright © 2016 e-legion. All rights reserved.
+//  Created by Sergey Rakov on 01.04.16.
+//  Copyright © 2016 e-Legion. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
