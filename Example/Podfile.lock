@@ -1,5 +1,5 @@
 PODS:
-  - ELNBehaviors (0.0.4)
+  - ELNBehaviors (0.0.6)
 
 DEPENDENCIES:
   - ELNBehaviors (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ELNBehaviors: a0f160377810ec654070164f62b72adfe8b8fe80
+  ELNBehaviors: 73e9d4d57902aa74ec4d843cebd765d38c89bc94
 
 COCOAPODS: 0.39.0
