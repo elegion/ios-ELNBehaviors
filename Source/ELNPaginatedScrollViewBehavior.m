@@ -19,10 +19,6 @@
 
 @implementation ELNPaginatedScrollViewBehaviorTimer
 
-- (void)dealloc {
-    
-}
-
 - (instancetype)initWithTarget:(id)target selector:(SEL)selector {
     self = [super init];
     if (self) {
@@ -65,9 +61,11 @@
 #pragma mark - Object Lifecycle
 
 - (void)dealloc {
-    // explicitly nil out properties to remove target/action and key-value observation 
+    // explicitly nil out properties to remove target/action and key-value observation
+    // and reset timers
     self.pageControl = nil;
     self.scrollView = nil;
+    self.autoScrollTimeInterval = 0;
 }
 
 #pragma mark - Initialization
