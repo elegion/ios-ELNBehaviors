@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ELNBehaviors"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "Collection of UI behaviors."
   s.homepage     = "https://github.com/elegion/ios-ELNBehaviors"
   s.author       = { "chebur" => "chebur.mail@gmail.com" }
