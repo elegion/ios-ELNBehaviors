@@ -8,12 +8,55 @@
 
 #import "ELNPaginatedScrollViewBehavior.h"
 
+/// Weak timer decorator
+@interface ELNPaginatedScrollViewBehaviorTimer : NSObject
+
+@property (nonatomic, weak) id target;
+@property (nonatomic, assign) SEL selector;
+@property (nonatomic, strong) NSTimer *timer;
+
+@end
+
+@implementation ELNPaginatedScrollViewBehaviorTimer
+
+- (void)dealloc {
+    
+}
+
+- (instancetype)initWithTarget:(id)target selector:(SEL)selector {
+    self = [super init];
+    if (self) {
+        self.target = target;
+        self.selector = selector;
+    }
+    return self;
+}
+
+- (void)invalidate {
+    [self.timer invalidate];
+    self.timer = nil;
+}
+
+- (void)scheduleTimerWithTimeInterval:(NSTimeInterval)ti userInfo:(nullable id)userInfo repeats:(BOOL)yesOrNo {
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:ti target:self selector:@selector(timerFired:) userInfo:userInfo repeats:yesOrNo];
+}
+
+- (void)timerFired:(NSTimer *)sender {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+    [self.target performSelector:self.selector withObject:sender];
+#pragma clang diagnostic pop
+}
+
+@end
+
+
 @interface ELNPaginatedScrollViewBehavior ()
 
 @property (nonatomic, strong) IBOutlet UIPageControl *pageControl;
 @property (nonatomic, strong) IBOutlet  UIScrollView *scrollView;
 @property (nonatomic, assign) NSInteger currentPageIndex;
-@property (nonatomic, weak) NSTimer *autoScrollTimer;
+@property (nonatomic, strong) ELNPaginatedScrollViewBehaviorTimer *autoScrollTimer;
 
 @end
 
@@ -117,7 +160,8 @@
     
     [self.autoScrollTimer invalidate];
     if (self.autoScrollTimeInterval > 0) {
-        self.autoScrollTimer = [NSTimer scheduledTimerWithTimeInterval:self.autoScrollTimeInterval target:self selector:@selector(timerFired:) userInfo:nil repeats:YES];
+        self.autoScrollTimer = [[ELNPaginatedScrollViewBehaviorTimer alloc] initWithTarget:self selector:@selector(timerFired:)];
+        [self.autoScrollTimer scheduleTimerWithTimeInterval:self.autoScrollTimeInterval userInfo:nil repeats:YES];
     }
 }
 

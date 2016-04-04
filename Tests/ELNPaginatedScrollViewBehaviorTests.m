@@ -23,7 +23,7 @@
     ELNPaginatedScrollViewBehavior *behavior = [[ELNPaginatedScrollViewBehavior alloc] initWithPageControl:pageControl scrollView:scrollView];
     behavior.autoScrollTimeInterval = 0.1;
     
-    XCTestExpectation *expectation = [self expectationWithDescription:@"Test Autoscroll Timer Should Chane Current Page By TimeInterval"];
+    XCTestExpectation *expectation = [self expectationWithDescription:@"Test Autoscroll Timer Should Change Current Page By TimeInterval"];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.19 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         XCTAssertEqual(behavior.pageControl.currentPage, 1);
         [expectation fulfill];
