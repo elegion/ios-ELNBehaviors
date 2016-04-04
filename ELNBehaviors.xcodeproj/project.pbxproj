@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11601B411CB2792900BE743A /* ELNPaginatedScrollViewBehaviorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11601B401CB2792900BE743A /* ELNPaginatedScrollViewBehaviorTests.m */; };
+		11601B431CB2792900BE743A /* ELNBehaviors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118973721CAC0778001841C2 /* ELNBehaviors.framework */; };
 		118973831CAC07A1001841C2 /* ELNPaginatedScrollViewBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 1189737F1CAC07A1001841C2 /* ELNPaginatedScrollViewBehavior.h */; };
 		118973841CAC07A1001841C2 /* ELNPaginatedScrollViewBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 118973801CAC07A1001841C2 /* ELNPaginatedScrollViewBehavior.m */; };
 		118973871CAC07B7001841C2 /* ELNBehaviors.h in Headers */ = {isa = PBXBuildFile; fileRef = 1189737E1CAC07A1001841C2 /* ELNBehaviors.h */; };
@@ -14,7 +16,20 @@
 		1189739D1CAC126C001841C2 /* ELNKeyboardDismissGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1189739B1CAC126C001841C2 /* ELNKeyboardDismissGestureRecognizer.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		11601B441CB2792900BE743A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 118973691CAC0778001841C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 118973711CAC0778001841C2;
+			remoteInfo = ELNBehaviors;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		11601B3E1CB2792900BE743A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11601B401CB2792900BE743A /* ELNPaginatedScrollViewBehaviorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELNPaginatedScrollViewBehaviorTests.m; sourceTree = "<group>"; };
+		11601B421CB2792900BE743A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		118973721CAC0778001841C2 /* ELNBehaviors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ELNBehaviors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1189737E1CAC07A1001841C2 /* ELNBehaviors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELNBehaviors.h; sourceTree = "<group>"; };
 		1189737F1CAC07A1001841C2 /* ELNPaginatedScrollViewBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELNPaginatedScrollViewBehavior.h; sourceTree = "<group>"; };
@@ -25,6 +40,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		11601B3B1CB2792900BE743A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11601B431CB2792900BE743A /* ELNBehaviors.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1189736E1CAC0778001841C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +58,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11601B3F1CB2792900BE743A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				11601B401CB2792900BE743A /* ELNPaginatedScrollViewBehaviorTests.m */,
+				11601B421CB2792900BE743A /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		118973681CAC0778001841C2 = {
 			isa = PBXGroup;
 			children = (
 				1189737D1CAC07A1001841C2 /* Source */,
+				11601B3F1CB2792900BE743A /* Tests */,
 				118973731CAC0778001841C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				118973721CAC0778001841C2 /* ELNBehaviors.framework */,
+				11601B3E1CB2792900BE743A /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +130,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		11601B3D1CB2792900BE743A /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11601B481CB2792900BE743A /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				11601B3A1CB2792900BE743A /* Sources */,
+				11601B3B1CB2792900BE743A /* Frameworks */,
+				11601B3C1CB2792900BE743A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11601B451CB2792900BE743A /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 11601B3E1CB2792900BE743A /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		118973711CAC0778001841C2 /* ELNBehaviors */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1189737A1CAC0778001841C2 /* Build configuration list for PBXNativeTarget "ELNBehaviors" */;
@@ -123,6 +175,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "e-legion";
 				TargetAttributes = {
+					11601B3D1CB2792900BE743A = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					118973711CAC0778001841C2 = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -141,11 +196,19 @@
 			projectRoot = "";
 			targets = (
 				118973711CAC0778001841C2 /* ELNBehaviors */,
+				11601B3D1CB2792900BE743A /* Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		11601B3C1CB2792900BE743A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		118973701CAC0778001841C2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -156,6 +219,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		11601B3A1CB2792900BE743A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11601B411CB2792900BE743A /* ELNPaginatedScrollViewBehaviorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1189736D1CAC0778001841C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -167,7 +238,37 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		11601B451CB2792900BE743A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 118973711CAC0778001841C2 /* ELNBehaviors */;
+			targetProxy = 11601B441CB2792900BE743A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		11601B461CB2792900BE743A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-legion.Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		11601B471CB2792900BE743A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.e-legion.Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		118973781CAC0778001841C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -293,6 +394,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		11601B481CB2792900BE743A /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11601B461CB2792900BE743A /* Debug */,
+				11601B471CB2792900BE743A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1189736C1CAC0778001841C2 /* Build configuration list for PBXProject "ELNBehaviors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

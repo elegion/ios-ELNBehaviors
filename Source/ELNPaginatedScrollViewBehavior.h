@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ELNPaginatedScrollViewBehavior : NSObject
 
+@property (nonatomic, strong, readonly) UIPageControl *pageControl;
+
+@property (nonatomic, strong, readonly) UIScrollView *scrollView;
+
 /// Sets up a timer to automatically scroll to next page.
 /// Auto scroll is disabled if time interval equals to 0.
 ///
