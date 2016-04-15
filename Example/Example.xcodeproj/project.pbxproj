@@ -7,29 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113E5A6A1CC118F700E44B13 /* ELNBehaviors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113E5A671CC118EF00E44B13 /* ELNBehaviors.framework */; };
 		1189734C1CAC0605001841C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1189734B1CAC0605001841C2 /* main.m */; };
 		1189734F1CAC0605001841C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1189734E1CAC0605001841C2 /* AppDelegate.m */; };
 		118973521CAC0605001841C2 /* PaginatedScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118973511CAC0605001841C2 /* PaginatedScrollViewController.m */; };
 		118973551CAC0605001841C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118973531CAC0605001841C2 /* Main.storyboard */; };
 		118973571CAC0605001841C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 118973561CAC0605001841C2 /* Assets.xcassets */; };
 		1189735A1CAC0605001841C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118973581CAC0605001841C2 /* LaunchScreen.storyboard */; };
-		1189738B1CAC0839001841C2 /* ELNBehaviors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118973671CAC06FC001841C2 /* ELNBehaviors.framework */; };
 		1189738E1CAC0948001841C2 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1189738D1CAC0948001841C2 /* CollectionViewCell.m */; };
 		118973951CAC0C08001841C2 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118973941CAC0C08001841C2 /* MenuViewController.m */; };
 		118973991CAC0F39001841C2 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118973981CAC0F39001841C2 /* KeyboardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		118973661CAC06FC001841C2 /* PBXContainerItemProxy */ = {
+		113E5A661CC118EF00E44B13 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 118973621CAC06FC001841C2 /* ELNBehaviors.xcodeproj */;
+			containerPortal = 113E5A611CC118EF00E44B13 /* ELNBehaviors.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 115C094C1CAAC17600DA9371;
+			remoteGlobalIDString = 118973721CAC0778001841C2;
 			remoteInfo = ELNBehaviors;
+		};
+		113E5A681CC118EF00E44B13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 113E5A611CC118EF00E44B13 /* ELNBehaviors.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 11601B3E1CB2792900BE743A;
+			remoteInfo = Tests;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		113E5A611CC118EF00E44B13 /* ELNBehaviors.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ELNBehaviors.xcodeproj; path = ../Framework/ELNBehaviors.xcodeproj; sourceTree = "<group>"; };
 		118973471CAC0605001841C2 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1189734B1CAC0605001841C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1189734D1CAC0605001841C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,8 +48,6 @@
 		118973561CAC0605001841C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		118973591CAC0605001841C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1189735B1CAC0605001841C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		118973611CAC0614001841C2 /* Default.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Default.xcconfig; path = ../Default.xcconfig; sourceTree = "<group>"; };
-		118973621CAC06FC001841C2 /* ELNBehaviors.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ELNBehaviors.xcodeproj; path = ../ELNBehaviors.xcodeproj; sourceTree = "<group>"; };
 		1189738C1CAC0948001841C2 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		1189738D1CAC0948001841C2 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		118973931CAC0C08001841C2 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
@@ -55,18 +61,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1189738B1CAC0839001841C2 /* ELNBehaviors.framework in Frameworks */,
+				113E5A6A1CC118F700E44B13 /* ELNBehaviors.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		113E5A621CC118EF00E44B13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				113E5A671CC118EF00E44B13 /* ELNBehaviors.framework */,
+				113E5A691CC118EF00E44B13 /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		1189733E1CAC0605001841C2 = {
 			isa = PBXGroup;
 			children = (
-				118973611CAC0614001841C2 /* Default.xcconfig */,
-				118973621CAC06FC001841C2 /* ELNBehaviors.xcodeproj */,
+				113E5A611CC118EF00E44B13 /* ELNBehaviors.xcodeproj */,
 				118973491CAC0605001841C2 /* Example */,
 				118973481CAC0605001841C2 /* Products */,
 			);
@@ -90,14 +104,6 @@
 				118973961CAC0C38001841C2 /* Views */,
 			);
 			path = Example;
-			sourceTree = "<group>";
-		};
-		118973631CAC06FC001841C2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				118973671CAC06FC001841C2 /* ELNBehaviors.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		1189738F1CAC0BBA001841C2 /* Application */ = {
@@ -197,8 +203,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 118973631CAC06FC001841C2 /* Products */;
-					ProjectRef = 118973621CAC06FC001841C2 /* ELNBehaviors.xcodeproj */;
+					ProductGroup = 113E5A621CC118EF00E44B13 /* Products */;
+					ProjectRef = 113E5A611CC118EF00E44B13 /* ELNBehaviors.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -209,11 +215,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		118973671CAC06FC001841C2 /* ELNBehaviors.framework */ = {
+		113E5A671CC118EF00E44B13 /* ELNBehaviors.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ELNBehaviors.framework;
-			remoteRef = 118973661CAC06FC001841C2 /* PBXContainerItemProxy */;
+			remoteRef = 113E5A661CC118EF00E44B13 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		113E5A691CC118EF00E44B13 /* Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.xctest;
+			remoteRef = 113E5A681CC118EF00E44B13 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -269,7 +282,6 @@
 /* Begin XCBuildConfiguration section */
 		1189735C1CAC0605001841C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 118973611CAC0614001841C2 /* Default.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -314,7 +326,6 @@
 		};
 		1189735D1CAC0605001841C2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 118973611CAC0614001841C2 /* Default.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

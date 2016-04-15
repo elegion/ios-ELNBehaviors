@@ -154,6 +154,7 @@
                     <navigationItem key="navigationItem" id="DuM-41-nIt"/>
                     <connections>
                         <outlet property="collectionView" destination="aFI-sh-kcQ" id="O6z-zu-Per"/>
+                        <outlet property="paginatedScrollViewBehavior" destination="Ji0-jU-aHe" id="UfN-WG-0Li"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

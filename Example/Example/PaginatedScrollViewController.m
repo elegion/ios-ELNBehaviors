@@ -8,12 +8,14 @@
 
 #import "PaginatedScrollViewController.h"
 #import "CollectionViewCell.h"
+#import <ELNBehaviors/ELNBehaviors.h>
 
 static NSString * const kCellId = @"cell";
 
 @interface PaginatedScrollViewController ()
 
 @property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
+@property (nonatomic, strong) IBOutlet ELNPaginatedScrollViewBehavior *paginatedScrollViewBehavior;
 @property (nonatomic, strong) NSArray<NSString *> *items;
 
 @end
@@ -26,6 +28,7 @@ static NSString * const kCellId = @"cell";
     [super viewDidLoad];
     
     self.items = @[@"1", @"2", @"3"];
+    self.paginatedScrollViewBehavior.autoScrollTimeInterval = 1;
 }
 
 #pragma mark - Configuring the View’s Layout Behavior
