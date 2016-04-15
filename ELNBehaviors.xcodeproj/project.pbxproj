@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113E5A321CC1030A00E44B13 /* ELNTouchesGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 113E5A301CC1030A00E44B13 /* ELNTouchesGestureRecognizer.h */; };
+		113E5A331CC1030A00E44B13 /* ELNTouchesGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 113E5A311CC1030A00E44B13 /* ELNTouchesGestureRecognizer.m */; };
 		11601B411CB2792900BE743A /* ELNPaginatedScrollViewBehaviorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11601B401CB2792900BE743A /* ELNPaginatedScrollViewBehaviorTests.m */; };
 		11601B431CB2792900BE743A /* ELNBehaviors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118973721CAC0778001841C2 /* ELNBehaviors.framework */; };
 		118973831CAC07A1001841C2 /* ELNPaginatedScrollViewBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 1189737F1CAC07A1001841C2 /* ELNPaginatedScrollViewBehavior.h */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		113E5A301CC1030A00E44B13 /* ELNTouchesGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELNTouchesGestureRecognizer.h; sourceTree = "<group>"; };
+		113E5A311CC1030A00E44B13 /* ELNTouchesGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELNTouchesGestureRecognizer.m; sourceTree = "<group>"; };
 		11601B3E1CB2792900BE743A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11601B401CB2792900BE743A /* ELNPaginatedScrollViewBehaviorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELNPaginatedScrollViewBehaviorTests.m; sourceTree = "<group>"; };
 		11601B421CB2792900BE743A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				1189739B1CAC126C001841C2 /* ELNKeyboardDismissGestureRecognizer.m */,
 				1189737F1CAC07A1001841C2 /* ELNPaginatedScrollViewBehavior.h */,
 				118973801CAC07A1001841C2 /* ELNPaginatedScrollViewBehavior.m */,
+				113E5A301CC1030A00E44B13 /* ELNTouchesGestureRecognizer.h */,
+				113E5A311CC1030A00E44B13 /* ELNTouchesGestureRecognizer.m */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -121,6 +127,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113E5A321CC1030A00E44B13 /* ELNTouchesGestureRecognizer.h in Headers */,
 				1189739C1CAC126C001841C2 /* ELNKeyboardDismissGestureRecognizer.h in Headers */,
 				118973871CAC07B7001841C2 /* ELNBehaviors.h in Headers */,
 				118973831CAC07A1001841C2 /* ELNPaginatedScrollViewBehavior.h in Headers */,
@@ -232,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				118973841CAC07A1001841C2 /* ELNPaginatedScrollViewBehavior.m in Sources */,
+				113E5A331CC1030A00E44B13 /* ELNTouchesGestureRecognizer.m in Sources */,
 				1189739D1CAC126C001841C2 /* ELNKeyboardDismissGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +409,7 @@
 				11601B471CB2792900BE743A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1189736C1CAC0778001841C2 /* Build configuration list for PBXProject "ELNBehaviors" */ = {
 			isa = XCConfigurationList;
