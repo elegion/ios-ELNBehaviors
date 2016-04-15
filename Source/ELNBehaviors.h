@@ -14,6 +14,6 @@ FOUNDATION_EXPORT double ELNBehaviorsVersionNumber;
 //! Project version string for ELNBehaviors.
 FOUNDATION_EXPORT const unsigned char ELNBehaviorsVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <ELNBehaviors/PublicHeader.h>
-
-
+#import <ELNBehaviors/ELNKeyboardDismissGestureRecognizer.h>
+#import <ELNBehaviors/ELNPaginatedScrollViewBehavior.h>
+#import <ELNBehaviors/ELNTouchesGestureRecognizer.h>
