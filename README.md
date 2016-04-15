@@ -3,6 +3,7 @@
 Коллекция поведений пользовательского интерфейса.
 
 - `ELNPaginatedScrollViewBehavior`
+- `ELNTouchesGestureRecognizer`
 - `ELNKeyboardDismissGestureRecognizer`
 
 ## Installation
@@ -50,6 +51,10 @@ github 'elegion/ios-ELNBehaviors'
 
 @end
 ```
+
+### ELNTouchesGestureRecognizer
+
+Жест, который изменяет свое состояние в соответствии с методами `touchesBegan`/`touchesMoved`/`touchesEnded`/`touchesCancelled`	
 
 ###ELNKeyboardDismissGestureRecognizer
 
