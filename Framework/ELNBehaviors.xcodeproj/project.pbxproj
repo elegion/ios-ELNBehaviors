@@ -36,7 +36,7 @@
 		113E5A3F1CC1154900E44B13 /* ELNPaginatedScrollViewBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELNPaginatedScrollViewBehavior.m; sourceTree = "<group>"; };
 		113E5A401CC1154900E44B13 /* ELNTouchesGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELNTouchesGestureRecognizer.h; sourceTree = "<group>"; };
 		113E5A411CC1154900E44B13 /* ELNTouchesGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELNTouchesGestureRecognizer.m; sourceTree = "<group>"; };
-		113E5A491CC1156300E44B13 /* Default.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Default.xcconfig; sourceTree = "<group>"; };
+		113E5A491CC1156300E44B13 /* Default.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Default.xcconfig; path = ../Framework/Default.xcconfig; sourceTree = "<group>"; };
 		113E5A4B1CC1157700E44B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		11601B3E1CB2792900BE743A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11601B401CB2792900BE743A /* ELNPaginatedScrollViewBehaviorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELNPaginatedScrollViewBehaviorTests.m; sourceTree = "<group>"; };
@@ -82,6 +82,7 @@
 		113E5A4C1CC1157A00E44B13 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				113E5A491CC1156300E44B13 /* Default.xcconfig */,
 				113E5A4B1CC1157700E44B13 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -99,7 +100,6 @@
 		118973681CAC0778001841C2 = {
 			isa = PBXGroup;
 			children = (
-				113E5A491CC1156300E44B13 /* Default.xcconfig */,
 				113E5A3A1CC1154900E44B13 /* Source */,
 				11601B3F1CB2792900BE743A /* Tests */,
 				118973731CAC0778001841C2 /* Products */,
